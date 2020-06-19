@@ -4,3 +4,5 @@ brain_games/__pycache__/
 petrmixayloff_brain_games.egg-info/
 
 *.pyc
+
+dist/
