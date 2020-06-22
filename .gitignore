@@ -1,4 +1,4 @@
-.venv
+.ve13159609nv
 brain_games/__pycache__/
 
 petrmixayloff_brain_games.egg-info/
@@ -6,3 +6,9 @@ petrmixayloff_brain_games.egg-info/
 *.pyc
 
 dist/
+
+.venv/bin/
+
+.venv/lib/python3.8/site-packages/
+
+.venv/
