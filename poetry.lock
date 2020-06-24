@@ -45,7 +45,7 @@ version = "2.2.0"
 
 [metadata]
 content-hash = "e30e624615063417269ddbb08b173ad2a92184d464adab1722ca38d170a88d21"
-python-versions = "3.8.2"
+python-versions = "3.8.3"
 
 [metadata.files]
 flake8 = [
