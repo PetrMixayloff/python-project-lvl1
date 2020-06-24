@@ -4,4 +4,6 @@
 
 [![Build Status](https://travis-ci.com/travis-ci/travis-web.svg?branch=master)](https://travis-ci.com/travis-ci/travis-web)
 
+[![asciicast](https://asciinema.org/a/tBFzdADm6ZzegN7E8gs4KCJGk.svg)](https://asciinema.org/a/tBFzdADm6ZzegN7E8gs4KCJGk)
+
 python-project-lvl1
