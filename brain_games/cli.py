@@ -19,7 +19,6 @@ def process_game():
     while res < 3:
         num, ans = generate()
         print(f'Question: {num}')
-        print(ans)
         player_answer = prompt.regex(pattern="^(yes|no)$", prompt="Your answer: ")
         if player_answer.string == ans:
             res += 1
