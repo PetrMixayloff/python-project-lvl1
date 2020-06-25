@@ -3,14 +3,14 @@ from ..cli import welcome_user, process_calc_game
 
 
 def calc_game():
-	main()
-	print('What is the result of the expression?')
-	name = welcome_user()
-	if process_calc_game():
-		print(f'Congratulations, {name}!')
-	else:
-		print(f"Let's try again, {name}!")
+    main()
+    print('What is the result of the expression?')
+    name = welcome_user()
+    if process_calc_game():
+        print(f'Congratulations, {name}!')
+    else:
+        print(f"Let's try again, {name}!")
 
 
 if __name__ == '__main__':
-	calc_game()
+    calc_game()

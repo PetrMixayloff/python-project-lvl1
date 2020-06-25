@@ -24,12 +24,14 @@ def process_even_game():
     while res < 3:
         num, ans = generate_even()
         print(f'Question: {num}')
-        player_answer = prompt.regex(pattern="^(yes|no)$", prompt="Your answer: ")
+        player_answer = prompt.regex(pattern="^(yes|no)$",
+                                     prompt="Your answer: ")
         if player_answer.string == ans:
             res += 1
             print('Correct!')
         else:
-            print(f"'{player_answer.string}' is wrong answer;(. Correct answer was '{ans}'.")
+            print(f"'{player_answer.string}' is wrong answer;(. "
+                  f"Correct answer was '{ans}'.")
             return False
     return True
 
@@ -54,6 +56,7 @@ def process_calc_game():
             res += 1
             print('Correct!')
         else:
-            print(f"'{player_answer}' is wrong answer;(. Correct answer was '{ans}'.")
+            print(f"'{player_answer}' is wrong answer;(. "
+                  f"Correct answer was '{ans}'.")
             return False
     return True
