@@ -4,6 +4,8 @@
 
 [![Build Status](https://travis-ci.com/travis-ci/travis-web.svg?branch=master)](https://travis-ci.com/travis-ci/travis-web)
 
+Install and game brain-even
 [![asciicast](https://asciinema.org/a/tBFzdADm6ZzegN7E8gs4KCJGk.svg)](https://asciinema.org/a/tBFzdADm6ZzegN7E8gs4KCJGk)
 
-python-project-lvl1
+Install and game brain-calc
+[![asciicast](https://asciinema.org/a/yc0HeWQKzjrO8Md1dPLZWx25Z.svg)](https://asciinema.org/a/yc0HeWQKzjrO8Md1dPLZWx25Z)
