@@ -1,5 +1,5 @@
 from .brain_games import main
-from ..cli import *
+from ..cli import welcome_user, process_calc_game
 
 
 def calc_game():
