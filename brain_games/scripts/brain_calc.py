@@ -2,15 +2,15 @@ from .brain_games import main
 from ..cli import *
 
 
-def even_game():
+def calc_game():
 	main()
-	print('Answer "yes" if number even otherwise answer "no".')
+	print('What is the result of the expression?')
 	name = welcome_user()
-	if process_even_game():
+	if process_calc_game():
 		print(f'Congratulations, {name}!')
 	else:
 		print(f"Let's try again, {name}!")
 
 
 if __name__ == '__main__':
-	even_game()
+	calc_game()
