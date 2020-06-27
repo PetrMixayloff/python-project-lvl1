@@ -3,7 +3,7 @@ packages = [
   { include = "brain_games" },
 ]
 name = "PetrMixayloff_brain_games"
-version = "0.3.0"
+version = "0.4.0"
 description = ""
 authors = ["''"]
 
@@ -18,6 +18,7 @@ flake8 = "^3.8.3"
 brain-games = "brain_games.scripts.brain_games:main"
 brain-even = "brain_games.scripts.brain_even:even_game"
 brain-calc = "brain_games.scripts.brain_calc:calc_game"
+brain-gcd = "brain_games.scripts.brain_gcd:gcd_game"
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"

@@ -9,3 +9,7 @@ Install and game brain-even
 
 Install and game brain-calc
 [![asciicast](https://asciinema.org/a/yc0HeWQKzjrO8Md1dPLZWx25Z.svg)](https://asciinema.org/a/yc0HeWQKzjrO8Md1dPLZWx25Z)
+
+Install and game brain-gcd
+[![asciicast](https://asciinema.org/a/JEMaHXbzBcQCj1EGxV3Wj8Gxe.svg)](https://asciinema.org/a/JEMaHXbzBcQCj1EGxV3Wj8Gxe)
+
