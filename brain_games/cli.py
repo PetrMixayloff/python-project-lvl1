@@ -87,4 +87,3 @@ def process_gcd_game():
                   f"Correct answer was '{ans}'.")
             return False
     return True
-
