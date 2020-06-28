@@ -1,3 +1,4 @@
+from math import sqrt
 from random import randint, choice
 import prompt
 
@@ -113,6 +114,46 @@ def process_progression_game():
             print('Correct!')
         else:
             print(f"'{player_answer}' is wrong answer;(. "
+                  f"Correct answer was '{ans}'.")
+            return False
+    return True
+
+
+def is_prime(n):
+    if n < 2:
+        return False
+    if n == 2:
+        return True
+    limit = sqrt(n)
+    i = 2
+    while i <= limit:
+        if n % i == 0:
+            return False
+        i += 1
+    return True
+
+
+def generate_prime():
+    num = randint(2, 100)
+    if is_prime(num):
+        ans = 'yes'
+    else:
+        ans = 'no'
+    return num, ans
+
+
+def process_prime_game():
+    res = 0
+    while res < 3:
+        num, ans = generate_prime()
+        print(f'Question: {num}')
+        player_answer = prompt.regex(pattern="^(yes|no)$",
+                                     prompt="Your answer: ")
+        if player_answer.string == ans:
+            res += 1
+            print('Correct!')
+        else:
+            print(f"'{player_answer.string}' is wrong answer;(. "
                   f"Correct answer was '{ans}'.")
             return False
     return True

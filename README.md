@@ -15,3 +15,7 @@ Install and game brain-gcd
 
 Install and game brain-progression
 [![asciicast](https://asciinema.org/a/2VVER4Ubgbu8c8moUvtXH2U8C.svg)](https://asciinema.org/a/2VVER4Ubgbu8c8moUvtXH2U8C)
+
+Install and game brain-prime
+
+[![asciicast](https://asciinema.org/a/mGtvNCx6NnFzzOjVoHQozorUN.svg)](https://asciinema.org/a/mGtvNCx6NnFzzOjVoHQozorUN)
