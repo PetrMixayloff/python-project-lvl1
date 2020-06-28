@@ -13,3 +13,5 @@ Install and game brain-calc
 Install and game brain-gcd
 [![asciicast](https://asciinema.org/a/JEMaHXbzBcQCj1EGxV3Wj8Gxe.svg)](https://asciinema.org/a/JEMaHXbzBcQCj1EGxV3Wj8Gxe)
 
+Install and game brain-progression
+[![asciicast](https://asciinema.org/a/2VVER4Ubgbu8c8moUvtXH2U8C.svg)](https://asciinema.org/a/2VVER4Ubgbu8c8moUvtXH2U8C)
