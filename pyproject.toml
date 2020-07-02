@@ -4,8 +4,17 @@ packages = [
 ]
 name = "PetrMixayloff_brain_games"
 version = "0.6.0"
-description = ""
-authors = ["''"]
+description = "Test python project 'brain games'."
+authors = ["PetrMixayloff"]
+repository = "https://test.pypi.org/simple/petrmixayloff-brain-games"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: Freeware",
+    "Programming Language :: Python",
+    "Topic :: Games/Entertainment"
+]
+
 
 [tool.poetry.dependencies]
 python = "3.8.2"

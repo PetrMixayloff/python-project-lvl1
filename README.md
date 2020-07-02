@@ -4,18 +4,8 @@
 
 [![Build Status](https://travis-ci.com/travis-ci/travis-web.svg?branch=master)](https://travis-ci.com/travis-ci/travis-web)
 
-Install and game brain-even
-[![asciicast](https://asciinema.org/a/tBFzdADm6ZzegN7E8gs4KCJGk.svg)](https://asciinema.org/a/tBFzdADm6ZzegN7E8gs4KCJGk)
+To install package 
+'pip3 install -i https://test.pypi.org/simple/petrmixayloff-brain-games'
 
-Install and game brain-calc
-[![asciicast](https://asciinema.org/a/yc0HeWQKzjrO8Md1dPLZWx25Z.svg)](https://asciinema.org/a/yc0HeWQKzjrO8Md1dPLZWx25Z)
-
-Install and game brain-gcd
-[![asciicast](https://asciinema.org/a/JEMaHXbzBcQCj1EGxV3Wj8Gxe.svg)](https://asciinema.org/a/JEMaHXbzBcQCj1EGxV3Wj8Gxe)
-
-Install and game brain-progression
-[![asciicast](https://asciinema.org/a/2VVER4Ubgbu8c8moUvtXH2U8C.svg)](https://asciinema.org/a/2VVER4Ubgbu8c8moUvtXH2U8C)
-
-Install and game brain-prime
-
-[![asciicast](https://asciinema.org/a/mGtvNCx6NnFzzOjVoHQozorUN.svg)](https://asciinema.org/a/mGtvNCx6NnFzzOjVoHQozorUN)
+Install and game 
+[![asciicast](https://asciinema.org/a/v9B1vQlRWZgJyZCLYgPGpxqY3.svg)](https://asciinema.org/a/v9B1vQlRWZgJyZCLYgPGpxqY3)
