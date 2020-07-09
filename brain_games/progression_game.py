@@ -1,28 +1,26 @@
+from random import randint
 import prompt
-from random import randint, choice
 from brain_games.cli import welcome_user
 
 
 def generate():
-    num1, num2 = randint(0, 100), randint(0, 100)
-    return num1, num2
+    num1 = randint(0, 10)
+    step = randint(0, 10)
+    progression = ['Question:', num1]
+    for i in range(1, 10):
+        progression.append(num1 + (step * i))
+    ans_index = randint(0, 9)
+    ans = progression[ans_index]
+    progression[ans_index] = '..'
+    return progression, ans
 
 
 def process_game():
     res = 0
-    signs = ['+', '-', '*']
     while res < 3:
-        num1, num2 = generate()
-        sign = choice(signs)
-        if sign == '+':
-            ans = num1 + num2
-            print(f'Question: {num1} + {num2}')
-        elif sign == '-':
-            ans = num1 - num2
-            print(f'Question: {num1} - {num2}')
-        else:
-            ans = num1 * num2
-            print(f'Question: {num1} * {num2}')
+        question, ans = generate()
+        for i in question:
+            print(i, end=' ')
         player_answer = prompt.integer(prompt="Your answer: ")
         if player_answer == ans:
             res += 1
@@ -36,7 +34,7 @@ def process_game():
 
 def main():
     print('Welcome to the Brain Games!')
-    print('What is the result of the expression?')
+    print('What number is missing in the progression?')
     name = welcome_user()
     if process_game():
         print(f'Congratulations, {name}!')
