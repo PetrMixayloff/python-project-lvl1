@@ -2,6 +2,9 @@ from math import sqrt
 import prompt
 
 
+WIN_COUNT = 3
+
+
 def welcome_user():
     name = prompt.string('May I have your name? ')
     print(f'Hello {name}!')

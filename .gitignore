@@ -12,3 +12,7 @@ dist/
 .venv/lib/python3.8/site-packages/
 
 .venv/
+
+*.xml
+
+.idea/

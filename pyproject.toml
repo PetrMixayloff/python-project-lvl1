@@ -3,7 +3,7 @@ packages = [
   { include = "brain_games" },
 ]
 name = "PetrMixayloff_brain_games"
-version = "0.7.0"
+version = "0.8.0"
 description = "Test python project 'brain games'."
 authors = ["PetrMixayloff"]
 repository = "https://test.pypi.org/simple/petrmixayloff-brain-games"

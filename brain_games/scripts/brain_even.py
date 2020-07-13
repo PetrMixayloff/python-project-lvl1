@@ -1,8 +1,10 @@
-from ..even_game import main
+from brain_games.games.even_game import generate
+from ..flow import game_flow
 
 
 def even_game():
-    main()
+    answer, question, greeting = generate()
+    game_flow(answer, question, greeting)
 
 
 if __name__ == '__main__':
