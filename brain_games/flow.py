@@ -1,5 +1,6 @@
-from .cli import *
-from .games.calc_game import generate
+import prompt
+
+from .cli import WIN_COUNT, welcome_user
 
 
 def game_flow(answer, question, greeting):
@@ -16,6 +17,7 @@ def game_flow(answer, question, greeting):
 def process_game(answer, question):
     res = 0
     while res < WIN_COUNT:
+        print(question)
         if isinstance(answer, int):
             player_answer = prompt.integer(prompt="Your answer: ")
         else:
@@ -26,6 +28,6 @@ def process_game(answer, question):
             print('Correct!')
         else:
             print(f"'{player_answer}' is wrong answer;(. "
-                  f"Correct answer was '{ans}'.")
+                  f"Correct answer was '{answer}'.")
             return False
     return True
