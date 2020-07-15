@@ -8,7 +8,6 @@ def generate():
             a = a % b
         else:
             b = b % a
-    ans = a if a != 0 else b
-    que = f'Question: {num1} {num2}'
-    greet = 'Find the greatest common divisor of given numbers.'
-    return ans, que, greet
+    answer = a if a != 0 else b
+    question = f'Question: {num1} {num2}'
+    return answer, question

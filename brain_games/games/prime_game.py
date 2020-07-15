@@ -1,13 +1,26 @@
 from random import randint
-from brain_games.cli import is_prime
+from math import sqrt
+
+
+def is_prime(n):
+    if n < 2:
+        return False
+    if n == 2:
+        return True
+    limit = sqrt(n)
+    i = 2
+    while i <= limit:
+        if n % i == 0:
+            return False
+        i += 1
+    return True
 
 
 def generate():
     num = randint(2, 100)
     if is_prime(num):
-        ans = 'yes'
+        answer = 'yes'
     else:
-        ans = 'no'
-    que = f'Question: {num}'
-    greet = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-    return ans, que, greet
+        answer = 'no'
+    question = f'Question: {num}'
+    return answer, question

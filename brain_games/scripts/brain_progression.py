@@ -1,10 +1,8 @@
-from brain_games.games.progression_game import generate
-from ..flow import game_flow
+from brain_games.flow import game_flow
 
 
 def progression_game():
-    answer, question, greeting = generate()
-    game_flow(answer, question, greeting)
+    game_flow('progression_game')
 
 
 if __name__ == '__main__':

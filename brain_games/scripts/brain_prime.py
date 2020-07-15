@@ -1,10 +1,8 @@
-from brain_games.games.prime_game import generate
-from ..flow import game_flow
+from brain_games.flow import game_flow
 
 
 def prime_game():
-    answer, question, greeting = generate()
-    game_flow(answer, question, greeting)
+    game_flow('prime_game')
 
 
 if __name__ == '__main__':

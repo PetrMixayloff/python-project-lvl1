@@ -7,11 +7,10 @@ def generate():
     progression = ['Question:', num1]
     for i in range(1, 10):
         progression.append(num1 + (step * i))
-    ans_index = randint(0, 9)
-    ans = progression[ans_index]
-    progression[ans_index] = '..'
-    que = ''
+    answer_index = randint(0, 9)
+    answer = progression[answer_index]
+    progression[answer_index] = '..'
+    question = ''
     for i in progression:
-        que += f'{i} '
-    greet = 'What number is missing in the progression?'
-    return ans, que, greet
+        question += f'{i} '
+    return answer, question
