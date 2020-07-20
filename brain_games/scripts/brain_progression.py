@@ -1,9 +1,10 @@
-from brain_games.flow import game_flow
+from brain_games import flow
+from brain_games.games import progression_game
 
 
-def progression_game():
-    game_flow('progression_game')
+def main():
+    flow.main(progression_game)
 
 
 if __name__ == '__main__':
-    progression_game()
+    main()

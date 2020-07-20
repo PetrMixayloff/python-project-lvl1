@@ -1,9 +1,10 @@
-from brain_games.flow import game_flow
+from brain_games import flow
+from brain_games.games import even_game
 
 
-def even_game():
-    game_flow('even_game')
+def main():
+    flow.main(even_game)
 
 
 if __name__ == '__main__':
-    even_game()
+    main()

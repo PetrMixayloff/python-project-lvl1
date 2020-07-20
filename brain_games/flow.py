@@ -1,16 +1,7 @@
 import prompt
-import importlib
 
 TOTAL_COUNT = 3
 GREETING = 'Welcome to the Brain Games!'
-DESCRIPTION = {
-    'calc_game': 'What is the result of the expression?',
-    'even_game': 'Answer "yes" if number even otherwise answer "no".',
-    'gcd_game': 'Find the greatest common divisor of given numbers.',
-    'prime_game': 'Answer "yes" if given number is prime. '
-                  'Otherwise answer "no".',
-    'progression_game': 'What number is missing in the progression?'
-}
 
 
 def welcome_user():
@@ -19,22 +10,23 @@ def welcome_user():
     return name
 
 
-def game_flow(game_name):
-    game = importlib.import_module(f'brain_games.games.{game_name}')
-    print(GREETING)
-    print(DESCRIPTION[game_name])
-    name = welcome_user()
+def answer_is_correct(answer, player_answer):
+    if player_answer != answer:
+        return False
+    return True
 
+
+def game_process(game, name):
     count = 0
     while count < TOTAL_COUNT:
         answer, question = game.generate()
-        print(question)
+        print(f'Question: {question}')
         if isinstance(answer, int):
             player_answer = prompt.integer(prompt="Your answer: ")
         else:
             player_answer = prompt.regex(pattern="^(yes|no)$",
                                          prompt="Your answer: ").string
-        if player_answer == answer:
+        if answer_is_correct(answer, player_answer):
             count += 1
             print('Correct!')
         else:
@@ -44,3 +36,10 @@ def game_flow(game_name):
             return
     print(f'Congratulations, {name}!')
     return
+
+
+def main(game):
+    print(GREETING)
+    print(game.DESCRIPTION)
+    name = welcome_user()
+    game_process(game, name)
