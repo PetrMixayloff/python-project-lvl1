@@ -5,7 +5,7 @@ PROGRESSION_LENGTH = 9
 DESCRIPTION = 'What number is missing in the progression?'
 
 
-def generate():
+def generate_data():
     num = randint(0, 10)
     step = randint(1, 10)
     progression = []
@@ -17,4 +17,4 @@ def generate():
     question = ''
     for i in progression:
         question += f'{i} '
-    return answer, question
+    return answer, question.rstrip()

@@ -20,7 +20,7 @@ def is_prime(n):
     return True
 
 
-def generate():
+def generate_data():
     num = randint(2, 100)
     if is_prime(num):
         answer = 'yes'

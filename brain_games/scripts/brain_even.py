@@ -1,9 +1,9 @@
 from brain_games import flow
-from brain_games.games import even_game
+from brain_games.games import even
 
 
 def main():
-    flow.main(even_game)
+    flow.main(even)
 
 
 if __name__ == '__main__':

@@ -5,7 +5,7 @@ import operator
 DESCRIPTION = 'What is the result of the expression?'
 
 
-def generate():
+def generate_data():
     num1, num2 = randint(0, 100), randint(0, 100)
     operations = {operator.add(num1, num2): '+',
                   operator.sub(num1, num2): '-',

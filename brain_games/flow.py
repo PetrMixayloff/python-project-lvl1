@@ -4,29 +4,25 @@ TOTAL_COUNT = 3
 GREETING = 'Welcome to the Brain Games!'
 
 
-def welcome_user():
+def get_user_name():
     name = prompt.string('May I have your name? ')
-    print(f'Hello {name}!')
     return name
 
 
-def answer_is_correct(answer, player_answer):
-    if player_answer != answer:
-        return False
-    return True
-
-
-def game_process(game, name):
+def game_interaction(game, name):
     count = 0
     while count < TOTAL_COUNT:
-        answer, question = game.generate()
+        answer, question = game.generate_data()
         print(f'Question: {question}')
+        # prompt.regex не возвращает строку, поэтому там стоит .string
+        # вся эта конструкция нужна для того чтобы исключить принятие игрой других вариантов ответов кроме возможных.
+        # часть игр принимает ответы ввиде чисел, а часть ввиде да/нет
         if isinstance(answer, int):
             player_answer = prompt.integer(prompt="Your answer: ")
         else:
             player_answer = prompt.regex(pattern="^(yes|no)$",
                                          prompt="Your answer: ").string
-        if answer_is_correct(answer, player_answer):
+        if answer == player_answer:
             count += 1
             print('Correct!')
         else:
@@ -41,5 +37,6 @@ def game_process(game, name):
 def main(game):
     print(GREETING)
     print(game.DESCRIPTION)
-    name = welcome_user()
-    game_process(game, name)
+    name = get_user_name()
+    print(f'Hello {name}!')
+    game_interaction(game, name)
